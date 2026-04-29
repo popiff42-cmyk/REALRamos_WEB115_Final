@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+   <title>Checkpoint Fate</title>
+   <script src="script.js" defer></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="dialogues">
+       <p id="dialogueBox">After recently moving out of your hometown of St. Petersburg, <br>
+       you were offered a job at a security checkpoint in the <br>
+       cold capital of Yakutsk, Russia. Are you taking the job?</p>
+       <p id="names"></p>
+   </div>
+  
+   <div class="container">
+       <button id="decline" onclick="declineOffer()">REJECT.</button>
+       <button id="take" onclick="takeOffer()">ACCEPT.</button>
+       <button id="beginStory" onclick="startGame()">Begin.</button>
+
+       <button id="Accept" onclick="accept()">accept bro</button>
+       <button id="Reject" onclick="reject()">reject bro</button>
+       
+   </div>
+   <div class="errteh">
+       <label>Enter commands below..</label>
+       <input id="cmdInput" type="text"></div>
+       <button id="cmdButton" onclick="cmdExecute()">Interact</button>
+       
+       <p> for name.......question name<br>
+       for age..........question age<br>
+       for address....question address<br>
+       for ssn:..........question ssn</p>
+   </div>
+
+   <audio id="gameMusic">
+        <source src="kanye.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+</html>
+
