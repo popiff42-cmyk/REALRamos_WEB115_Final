@@ -1,6 +1,14 @@
-#dialogues {
-    border-width: 5px;
-    border-color: black;
+.dialogues {
+    padding: 24px;
+    width: 320px;
+    border: 2px solid black;
+}
+
+.theWindow {
+    padding: 24px;
+    width: 300px;
+    border: 2px solid black;
+    align-content; : 20pxs
 }
 
 #container {
