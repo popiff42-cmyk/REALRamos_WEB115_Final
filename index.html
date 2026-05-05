@@ -11,34 +11,51 @@
        cold capital of Yakutsk, Russia. Are you taking the job?</p>
        <p id="names"></p>
    </div>
-
-   <div class="theWindow">
-        <img src="images/jamey2.png" alt="nick mogging" width="300px" height="100"/>
-   </div>
   
    <div class="container">
-       <button id="decline" onclick="declineOffer()">REJECT.</button>
-       <button id="take" onclick="takeOffer()">ACCEPT.</button>
+       <button id="Reject">REJECT.</button>
+       <button id="Accept" onclick="acceptPerson()">ACCEPT.</button>
        <button id="beginStory" onclick="startGame()">Begin.</button>
-
-       <button id="Accept" onclick="accept()">accept bro</button>
-       <button id="Reject" onclick="reject()">reject bro</button>
-       
    </div>
+   
    <div class="errteh">
-       <label>Enter commands below..</label>
-       <input id="cmdInput" type="text"></div>
-       <button id="cmdButton" onclick="cmdExecute()">Interact</button>
+       <p id="timerDisplay" style="display:none;">Time: <span id="timerValue">0</span>s</p>
+   </div>
+
+   <div class="gameContainer" style="display:none;">
+       <div class="infoSection">
+           <h3>Database Information (REAL)</h3>
+           <div id="realInfoBox" class="infoBox">
+               <p><strong>Name:</strong> <span id="realName"></span></p>
+               <p><strong>Age:</strong> <span id="realAge"></span></p>
+               <p><strong>SSN:</strong> <span id="realSSN"></span></p>
+               <p><strong>Address:</strong> <span id="realAddress"></span></p>
+           </div>
+       </div>
        
-       <p> for name.......question name<br>
-       for age..........question age<br>
-       for address....question address<br>
-       for ssn:..........question ssn</p>
+       <div class="personDocuments">
+           <h3>Person's Claims</h3>
+           <div id="claimsBox" class="claimsBox"></div>
+       </div>
+       
+       <div id="decisionButtons" style="margin-top: 20px;">
+           <button id="AcceptGame" onclick="makeDecision(true)">ACCEPT</button>
+           <button id="RejectGame" onclick="makeDecision(false)">REJECT</button>
+       </div>
+   </div>
+
+   <div class="pictureWindow">
+    <img class="windowthing" src="photohere.jpg" alt="jamey">
+   </div>
+
+   <div class="statsContainer">
+       <p id="correctCounter">Correct: 0</p>
+       <p id="mistakesCounter">Mistakes: 0</p>
    </div>
 
    <audio id="gameMusic">
-        <source src="kanye.mp3" type="audio/mpeg">
-    </audio>
-
+        <source src="gameMusic.mp3" type="audio/mpeg">
+   </audio>
 </body>
 </html>
+

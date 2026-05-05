@@ -1,24 +1,67 @@
-.dialogues {
-    padding: 24px;
-    width: 320px;
-    border: 2px solid black;
+#dialogues {
+   border-width: 5px;
+   border-color: black;
 }
 
-.theWindow {
-    padding: 24px;
-    width: 300px;
-    border: 2px solid black;
-    align-content; : 20pxs
-}
 
 #container {
-    border: 2px;
-    border-color: red;
-    padding: 20px;
-    margin: 10px;
+   border: 2px;
+   border-color: red;
+   padding: 20px;
+   margin: 10px;
 }
 
+
 body {
-    background-color: rgb(107, 87, 87);
-    color: white;
+   background-color: rgb(107, 87, 87);
+   color: white;
 }
+
+.gameContainer {
+   display: flex;
+   gap: 30px;
+   margin-top: 20px;
+   background-color: rgba(0, 0, 0, 0.3);
+   padding: 20px;
+   border: 2px solid white;
+}
+
+.infoSection {
+   flex: 1;
+   padding: 15px;
+   border: 2px solid green;
+   background-color: rgba(0, 100, 0, 0.2);
+}
+
+.infoBox {
+   background-color: rgba(0, 0, 0, 0.5);
+   padding: 10px;
+   border: 1px solid green;
+}
+
+.personDocuments {
+   flex: 1;
+   padding: 15px;
+   border: 2px solid yellow;
+   background-color: rgba(100, 100, 0, 0.2);
+}
+
+.claimsBox {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.claimItem {
+   background-color: rgba(0, 0, 0, 0.5);
+   padding: 10px;
+   border: 1px solid yellow;
+}
+
+.statsContainer {
+   margin-top: 20px;
+   padding: 10px;
+   border: 2px solid white;
+   background-color: rgba(0, 0, 0, 0.3);
+}
+
