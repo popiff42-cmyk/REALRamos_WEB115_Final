@@ -5,8 +5,15 @@ const beginner = document.getElementById("beginStory")
 const dialoguer = document.getElementById("dialogueBox")
 const namer = document.getElementById("names")
 const musicer = document.getElementById("gameMusic")
-const windower = document.getElementsByClassName("windowthing")
+const sounder = document.getElementById("soundEffect")
 
+document.getElementById("gongSound").addEventListener("click", playSound)
+sounder.volume = 1
+musicer.volume = 0.5
+
+function playSound() {
+    sounder.play()
+}
 
 let correctCount = 0
 let mistakesCount = 0
@@ -17,7 +24,6 @@ let timerInterval = null
 let timeElapsed = 0
 let currentPersonIndex = 0
 let totalRounds = 5 // must match number of classes
-windower.style.display = 'none'
 
 //real
 class Person {
@@ -92,7 +98,9 @@ function acceptPerson(){
    beginner.hidden = false
 }
 
-function rejectPerson(){}
+function rejectPerson(){
+    // NO is not an option. You MUST go.
+}
 
 
 function startTimer() {
@@ -106,6 +114,7 @@ function startTimer() {
        timerValue.innerHTML = timeElapsed
    }, 1000)
 }
+
 
 
 function stopTimer() {
