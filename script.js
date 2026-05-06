@@ -28,8 +28,8 @@ let currentPerson = null
 let currentInfo = null
 let isRealInfo = false
 let timerInterval = null
-let timeElapsed = 0
-let currentPersonIndex = 0
+let timeElapsed = 0 // start seconds
+let currentPersonIndex = 0 // keep at 0
 let totalRounds = 5 // must match number of classes
 
 //real
