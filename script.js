@@ -111,7 +111,7 @@ function rejectPerson(){
 
 
 function startTimer() {
-   timeElapsed = 0
+
    const timerDisplay = document.getElementById("timerDisplay")
    const timerValue = document.getElementById("timerValue")
    timerDisplay.style.display = "block"
