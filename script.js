@@ -6,10 +6,17 @@ const dialoguer = document.getElementById("dialogueBox")
 const namer = document.getElementById("names")
 const musicer = document.getElementById("gameMusic")
 const sounder = document.getElementById("soundEffect")
+const sounder2 = document.getElementById("soundEffect2")
 
 document.getElementById("gongSound").addEventListener("click", playSound)
-sounder.volume = 1
+document.getElementById("pipeSound").addEventListener("click", playSound2)
+sounder.volume = 0.5
+sounder2.volume = 0.2
 musicer.volume = 0.5
+
+function playSound2() {
+    sounder2.play()
+}
 
 function playSound() {
     sounder.play()
